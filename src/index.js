@@ -11,4 +11,4 @@ app.use(body.json())
 app.use(rotas)
 app.use(cors())
 
-app.listen('https://backend-surfbot.herokuapp.com/', () => console.log('iniciado com sucesso'))
+app.listen(proces.env.PORT || 3333, () => console.log('iniciado com sucesso'))
