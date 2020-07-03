@@ -7,7 +7,7 @@ const cors = require('cors')
 
 require('dotenv').config()
 
-mongoose.connect('mongodb+srv://joneivison13:1a2a3a4a5a6a@cluster0.9efbr.mongodb.net/test', { useUnifiedTopology: true, seNewUrlParser: true }).then(() => console.log('database is ok')).catch(err => console.log(err))
+mongoose.connect(process.env.MONGODB_URI, { useUnifiedTopology: true, seNewUrlParser: true }).then(() => console.log('database is ok')).catch(err => console.log(err))
 
 app.use(cors())
 app.use(body.json())
