@@ -13,4 +13,4 @@ app.use(cors())
 app.use(body.json())
 app.use(rotas)
 
-app.listen(proces.env.PORT || 3333, () => console.log('iniciado com sucesso'))
+app.listen(process.env.PORT || 3333, () => console.log('iniciado com sucesso'))
