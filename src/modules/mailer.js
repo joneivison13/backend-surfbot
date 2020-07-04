@@ -7,6 +7,7 @@ const transport = nodemailer.createTransport({
     user: "joneivison355@gmail.com",
     pass: "iasmimoo001",
   },
+  secure:true
 });
 // const transport = nodemailer.createTransport({
 //   host: "smtp.mailtrap.io",
